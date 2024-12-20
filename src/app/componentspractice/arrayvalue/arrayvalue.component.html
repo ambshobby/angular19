@@ -1,0 +1,21 @@
+<p>arrayvalue works!</p>
+<h1>evens</h1>
+{{even()}}
+@for(val of evens;track val;let i=$index)
+{
+    
+    <button type="button" class="btn btn-success">{{val}}</button>
+    <br/>
+}
+{{sum()}}
+@for(value of intarray;track value;let i=$index)
+{
+    <div class="card">
+        <div class="card-body">
+            thats my int array
+          {{value}} at position {{i}}
+          this is sum array 
+          {{sumarray[i]}}
+        </div>
+      </div>
+}
